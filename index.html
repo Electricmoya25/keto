@@ -3,32 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Dieta Keto Abril</title>
+  <title>Dashboard Dieta Keto Abril 3 Comidas</title>
   <link rel="preconnect" href="https://api.fontshare.com" />
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@500,700&display=swap" rel="stylesheet">
   <style>
-    :root,[data-theme="light"]{
-      --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);--text-sm:clamp(.875rem,.8rem + .35vw,1rem);--text-base:clamp(1rem,.95rem + .25vw,1.125rem);--text-lg:clamp(1.125rem,1rem + .75vw,1.5rem);--text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
-      --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;--space-16:4rem;
-      --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-surface-offset:#f3f0ec;--color-border:#d4d1ca;--color-text:#28251d;--color-text-muted:#69665f;--color-primary:#01696f;--color-primary-hover:#0c4e54;--color-primary-highlight:#cedcd8;--color-success:#437a22;--color-warning:#964219;--radius-md:.75rem;--radius-lg:1rem;--radius-full:999px;--shadow-sm:0 1px 2px rgba(0,0,0,.05);--shadow-md:0 10px 24px rgba(0,0,0,.08);--font-display:'Boska', Georgia, serif;--font-body:'Satoshi', Inter, sans-serif;
-    }
-    [data-theme="dark"]{--color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;--color-surface-offset:#22211f;--color-border:#393836;--color-text:#ece9e2;--color-text-muted:#b2ada5;--color-primary:#4f98a3;--color-primary-hover:#227f8b;--color-primary-highlight:#313b3b;--color-success:#6daa45;--color-warning:#d19900;--shadow-sm:0 1px 2px rgba(0,0,0,.25);--shadow-md:0 12px 30px rgba(0,0,0,.35)}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.55;background:var(--color-bg);color:var(--color-text)}
-    a{color:inherit} button{font:inherit} .app{display:grid;grid-template-columns:300px 1fr;min-height:100vh} .sidebar{position:sticky;top:0;height:100vh;padding:var(--space-6);background:var(--color-surface);border-right:1px solid var(--color-border);overflow:auto}
-    .logo{display:flex;gap:12px;align-items:center;margin-bottom:var(--space-8)} .logo svg{width:42px;height:42px;color:var(--color-primary)} .logo h1{font-family:var(--font-display);font-size:var(--text-xl);margin:0;line-height:1}
-    .small{font-size:var(--text-sm);color:var(--color-text-muted)} nav{display:grid;gap:10px;margin:var(--space-8) 0} nav a{padding:12px 14px;border-radius:12px;text-decoration:none;background:transparent} nav a:hover,nav a.active{background:var(--color-primary-highlight);color:var(--color-primary-hover)}
-    .theme-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:none;border-radius:999px;background:var(--color-surface-offset);color:var(--color-text);cursor:pointer}
-    .content{padding:var(--space-8);display:grid;gap:var(--space-8)}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-6);align-items:stretch} .card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm)} .hero-main{padding:var(--space-8);background:linear-gradient(135deg,var(--color-surface),var(--color-surface-offset))} .hero-main h2{font-family:var(--font-display);font-size:clamp(2rem,3vw,3.25rem);margin:0 0 12px 0;line-height:1.02} .hero-main p{max-width:62ch;margin:0 0 var(--space-6) 0}
-    .hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4)} .stat{padding:var(--space-5)} .stat strong{display:block;font-size:1.8rem;color:var(--color-primary)}
-    .section-title{display:flex;justify-content:space-between;align-items:end;gap:var(--space-4)} .section-title h3{margin:0;font-size:var(--text-lg)} .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{padding:6px 10px;border-radius:999px;background:var(--color-surface-offset);font-size:var(--text-sm)}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4)} .kpi{padding:var(--space-5)} .kpi .label{font-size:var(--text-sm);color:var(--color-text-muted)} .kpi .value{font-size:1.8rem;font-weight:700;margin-top:6px}
-    .week-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4)} .week-card{padding:var(--space-5)} .week-card h4{margin:0 0 8px 0} .day-list{display:grid;gap:10px;margin-top:var(--space-4)} .day{padding:12px;border-radius:14px;background:var(--color-surface-offset)} .day b{display:block;margin-bottom:6px}
-    .recipe-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4)} .recipe{padding:var(--space-5)} .recipe h4{margin:0 0 10px 0} .recipe ol,.recipe ul{padding-left:20px;margin:8px 0 0 0} .recipe li{margin:6px 0}
-    .shopping{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4)} .shopping .card{padding:var(--space-5)}
-    .calendar{overflow:auto} table{width:100%;border-collapse:collapse;font-size:var(--text-sm)} th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--color-border);vertical-align:top} th{position:sticky;top:0;background:var(--color-surface)}
-    .note{padding:var(--space-5);border-left:4px solid var(--color-primary);background:var(--color-surface-offset);border-radius:0 var(--radius-md) var(--radius-md) 0}
-    @media (max-width: 980px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto;border-right:none;border-bottom:1px solid var(--color-border)}.hero,.kpis,.week-grid,.recipe-grid,.shopping{grid-template-columns:1fr}.content{padding:var(--space-4)}.hero-stats{grid-template-columns:1fr 1fr}}
+    :root,[data-theme="light"]{--text-sm:clamp(.875rem,.8rem + .35vw,1rem);--text-base:clamp(1rem,.95rem + .25vw,1.125rem);--text-lg:clamp(1.125rem,1rem + .75vw,1.5rem);--text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-12:3rem;--color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;--color-surface-offset:#f3f0ec;--color-border:#d4d1ca;--color-text:#28251d;--color-text-muted:#69665f;--color-primary:#01696f;--color-primary-highlight:#cedcd8;--radius:16px;--shadow:0 10px 24px rgba(0,0,0,.08);--font-display:'Boska', Georgia, serif;--font-body:'Satoshi', Inter, sans-serif}
+    [data-theme="dark"]{--color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;--color-surface-offset:#22211f;--color-border:#393836;--color-text:#ece9e2;--color-text-muted:#b2ada5;--color-primary:#4f98a3;--color-primary-highlight:#313b3b;--shadow:0 12px 30px rgba(0,0,0,.35)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--color-bg);color:var(--color-text);font:400 var(--text-base)/1.55 var(--font-body)}
+    .app{display:grid;grid-template-columns:300px 1fr;min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;overflow:auto;padding:var(--space-6);background:var(--color-surface);border-right:1px solid var(--color-border)}
+    .logo{display:flex;align-items:center;gap:12px}.logo svg{width:42px;height:42px;color:var(--color-primary)}.logo h1{margin:0;font:700 var(--text-xl)/1 var(--font-display)}
+    .small{font-size:var(--text-sm);color:var(--color-text-muted)} nav{display:grid;gap:10px;margin:var(--space-8) 0} nav a{text-decoration:none;color:inherit;padding:12px 14px;border-radius:12px} nav a:hover,nav a.active{background:var(--color-primary-highlight)}
+    .theme-toggle{width:44px;height:44px;border:none;border-radius:999px;background:var(--color-surface-offset);cursor:pointer}.content{padding:var(--space-8);display:grid;gap:var(--space-8)}
+    .card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius);box-shadow:var(--shadow)} .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:var(--space-6)}
+    .hero-main{padding:var(--space-8)} .hero-main h2{margin:0 0 12px 0;font:700 clamp(2rem,3vw,3.2rem)/1.02 var(--font-display)} .grid2,.grid3,.grid4{display:grid;gap:var(--space-4)} .grid2{grid-template-columns:repeat(2,1fr)} .grid3{grid-template-columns:repeat(3,1fr)} .grid4{grid-template-columns:repeat(4,1fr)}
+    .box{padding:var(--space-5)} .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--color-surface-offset);font-size:var(--text-sm);margin-right:8px;margin-bottom:8px}
+    .section-title{display:flex;justify-content:space-between;align-items:end;gap:12px}.section-title h3{margin:0;font-size:var(--text-lg)}
+    .schedule .meal{padding:14px;border-radius:14px;background:var(--color-surface-offset);margin-top:10px}.schedule b{display:block;margin-bottom:4px}
+    table{width:100%;border-collapse:collapse;font-size:var(--text-sm)} th,td{padding:10px 12px;border-bottom:1px solid var(--color-border);text-align:left;vertical-align:top} th{background:var(--color-surface);position:sticky;top:0}
+    ul,ol{margin:8px 0 0 0;padding-left:20px} li{margin:6px 0}.note{padding:var(--space-5);background:var(--color-surface-offset);border-radius:14px}
+    @media (max-width: 980px){.app{grid-template-columns:1fr}.sidebar{position:relative;height:auto;border-right:none;border-bottom:1px solid var(--color-border)}.content{padding:var(--space-4)}.hero,.grid2,.grid3,.grid4{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -37,158 +30,135 @@
     <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
       <div class="logo">
         <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" aria-label="Logo keto abril">
-          <path d="M14 42c9-20 27-28 36-26-2 12-12 29-32 34"/>
-          <path d="M23 41c2-4 8-10 17-15"/>
-          <circle cx="47" cy="18" r="5" fill="currentColor" stroke="none"/>
+          <path d="M14 42c9-20 27-28 36-26-2 12-12 29-32 34"/><path d="M23 41c2-4 8-10 17-15"/><circle cx="47" cy="18" r="5" fill="currentColor" stroke="none"/>
         </svg>
-        <div>
-          <h1>Keto Abril</h1>
-          <div class="small">Dashboard mensual Mercadona</div>
-        </div>
+        <div><h1>Keto Abril</h1><div class="small">3 comidas · Mercadona</div></div>
       </div>
       <button class="theme-toggle" data-theme-toggle aria-label="Cambiar tema">◐</button>
     </div>
-    <div class="note small">Ventana de comida: <b>10:00</b> y <b>18:00</b>. El plan usa dos comidas al día con ruptura de ayuno fácil para oficina.</div>
+    <div class="note small" style="margin-top:var(--space-6)">Nuevo reparto horario: <b>10:00</b>, <b>13:00</b> y <b>18:00</b>. Mantiene enfoque keto, pero con mejor distribución para oficina y menos hambre acumulada al final del día.</div>
     <nav>
       <a href="#resumen" class="active">Resumen</a>
-      <a href="#semanas">Semanas</a>
+      <a href="#horario">Horario</a>
+      <a href="#calendario">Calendario</a>
       <a href="#recetas">Recetas</a>
-      <a href="#calendario">Calendario abril</a>
-      <a href="#compra">Compra Mercadona</a>
+      <a href="#mercadona">Lista real Mercadona</a>
     </nav>
-    <div class="small">Base del plan: productos naturales, nada de avena, variedad semanal, recetas simples y enfoque keto flexible.</div>
+    <div class="small">Nota de verificación: he podido confirmar nombres reales de producto desde resultados públicos de Mercadona online, pero la app completa no expone fácilmente todo el catálogo sin navegación interna o sesión. Por eso te dejo productos con nombre verificable cuando aparece en resultados públicos y una segunda capa con nombres comerciales muy probables para revisar en tu tienda concreta.</div>
   </aside>
   <main class="content">
     <section id="resumen" class="hero">
-      <div class="hero-main card">
-        <div class="chips"><span class="chip">Keto</span><span class="chip">Ayuno intermitente</span><span class="chip">Mercadona</span><span class="chip">Abril 2026</span></div>
-        <h2>Plan mensual keto con recetas fáciles y rotación real</h2>
-        <p>Este dashboard organiza abril completo con dos comidas al día, evitando repetir exactamente el mismo patrón cada semana. La primera comida está pensada para oficina y la segunda para casa, con recetas cortas y naturales usando productos habituales de Mercadona.</p>
-        <div class="hero-stats">
-          <div class="card stat"><span class="small">Comidas al día</span><strong>2</strong><span class="small">10:00 y 18:00</span></div>
-          <div class="card stat"><span class="small">Recetas base</span><strong>12</strong><span class="small">rotables</span></div>
-          <div class="card stat"><span class="small">Semanas distintas</span><strong>4</strong><span class="small">más 2 días extra</span></div>
-          <div class="card stat"><span class="small">Objetivo</span><strong>Simple</strong><span class="small">sin avena ni ultraprocesados como base</span></div>
+      <div class="card hero-main">
+        <span class="tag">Abril 2026</span><span class="tag">Keto natural</span><span class="tag">Mercadona</span><span class="tag">3 comidas</span>
+        <h2>Plan mensual keto más realista para oficina y casa</h2>
+        <p>He reorganizado el dashboard en tres tomas: ruptura de ayuno o desayuno tardío a las 10:00, comida fácil a las 13:00 y cena principal a las 18:00. La base sigue siendo natural, sin avena, con yogur griego, huevos, carne, pescado, verduras bajas en carbohidratos y sustitutos como la coliflor picada.</p>
+        <div class="grid4" style="margin-top:var(--space-6)">
+          <div class="card box"><div class="small">Comidas/día</div><div style="font-size:1.8rem;font-weight:700">3</div></div>
+          <div class="card box"><div class="small">Recetas base</div><div style="font-size:1.8rem;font-weight:700">14</div></div>
+          <div class="card box"><div class="small">Ventanas</div><div style="font-size:1.8rem;font-weight:700">10·13·18</div></div>
+          <div class="card box"><div class="small">Objetivo</div><div style="font-size:1.2rem;font-weight:700">variedad</div></div>
         </div>
       </div>
-      <div class="card" style="padding:var(--space-6)">
+      <div class="card box schedule" id="horario">
         <div class="section-title"><h3>Estructura diaria</h3></div>
-        <div class="day-list">
-          <div class="day"><b>10:00 · romper ayuno</b>Yogur griego natural + pequeña porción de arándanos + semillas o frutos secos, o una alternativa salada tipo huevos cocidos, pavo, queso fresco y pepino.</div>
-          <div class="day"><b>18:00 · comida principal</b>Proteína principal + verdura baja en carbohidratos + grasa saludable, usando aceite de oliva, aceitunas, aguacate, quesos curados o salsas simples.</div>
-          <div class="day"><b>Norma de variedad</b>No repetir la misma cena más de una vez por semana y rotar pollo, huevos, salmón, carne picada, atún, langostinos y cerdo.</div>
-          <div class="day"><b>Fruta</b>Arándanos en porciones pequeñas; si quieres bajar más carbohidrato, alterna con fresas o moras.</div>
-        </div>
+        <div class="meal"><b>10:00</b>Comida rápida de oficina: yogur griego natural, arándanos en porción pequeña, nueces, queso fresco batido, huevos cocidos o pavo con queso.</div>
+        <div class="meal"><b>13:00</b>Comida intermedia ligera: ensalada proteica, tortilla, queso y pepino, lata de atún con aceitunas, salmón ahumado con hojas verdes o restos de cena del día anterior.</div>
+        <div class="meal"><b>18:00</b>Cena principal: proteína + verdura baja en carbohidratos + grasa saludable, con recetas tipo arroz de coliflor, calabacín, ensaladas completas, carne, pollo o pescado.</div>
       </div>
     </section>
 
-    <section>
-      <div class="kpis">
-        <div class="card kpi"><div class="label">Ruptura de ayuno estándar</div><div class="value">200–300 kcal</div><div class="small">rápida para oficina</div></div>
-        <div class="card kpi"><div class="label">Cena objetivo</div><div class="value">500–800 kcal</div><div class="small">según hambre y progreso</div></div>
-        <div class="card kpi"><div class="label">Carbohidrato neto</div><div class="value">20–35 g</div><div class="small">aprox. al día</div></div>
-        <div class="card kpi"><div class="label">Preparación</div><div class="value">10–25 min</div><div class="small">recetas operativas</div></div>
-      </div>
-    </section>
-
-    <section id="semanas">
-      <div class="section-title"><h3>Plan por semanas</h3><div class="small">Rotación para no comer igual todos los días ni todas las semanas</div></div>
-      <div class="week-grid">
-        <article class="card week-card"><h4>Semana 1 · 1 al 7 abril</h4><div class="day-list">
-          <div class="day"><b>10:00</b>Lun yogur griego + arándanos + nueces; Mar queso fresco batido natural + canela + semillas; Mié yogur griego + chía; Jue huevos cocidos + jamón cocido extra; Vie yogur griego + arándanos; Sáb tortilla francesa en táper; Dom yogur griego + almendras.</div>
-          <div class="day"><b>18:00</b>Poke bowl keto de salmón ahumado; hamburguesa al plato con lechuga y queso; pollo al ajillo con calabacín; tortilla de espinacas y queso; salteado de ternera con champiñón; ensalada César keto; pizza base de calabacín.</div>
-        </div></article>
-        <article class="card week-card"><h4>Semana 2 · 8 al 14 abril</h4><div class="day-list">
-          <div class="day"><b>10:00</b>Yogur griego + coco rallado; queso curado + pepino + pavo; yogur griego + moras; huevos cocidos + aceitunas; yogur griego + arándanos; queso fresco + nueces; yogur griego + semillas.</div>
-          <div class="day"><b>18:00</b>Arroz de coliflor con pollo al curry; langostinos con calabacín y aguacate; lomo de cerdo con ensalada; huevos revueltos con gulas; atún gratinado con mayonesa y queso; pechuga rellena de queso y pimientos; taco bowl keto con carne picada.</div>
-        </div></article>
-        <article class="card week-card"><h4>Semana 3 · 15 al 21 abril</h4><div class="day-list">
-          <div class="day"><b>10:00</b>Yogur griego + arándanos; skyr natural si te apetece variar; queso fresco + tomate; yogur griego + canela; huevos + lonchas de pavo; yogur griego + nueces; vaso de kéfir natural sin azúcar si te encaja mejor.</div>
-          <div class="day"><b>18:00</b>Salmón al horno con espárragos; wok de pollo y brócoli; hamburguesas de pavo con queso; ensalada de atún y huevo; albóndigas keto con tomate natural; crema de calabacín con queso y pollo; revuelto de champiñones y gambas.</div>
-        </div></article>
-        <article class="card week-card"><h4>Semana 4 · 22 al 30 abril</h4><div class="day-list">
-          <div class="day"><b>10:00</b>Yogur griego + arándanos; queso fresco + semillas; yogur griego + cacao puro; huevos cocidos + queso; yogur griego + nueces; yogur griego + fresas; tabla pequeña de pavo y queso; yogur griego + arándanos; huevos + aguacate.</div>
-          <div class="day"><b>18:00</b>Poke bowl keto de atún; fajitas keto en hojas de lechuga; merluza con mayonesa de ajo; pollo asado con ensalada griega; calabacines rellenos de carne; tortilla de chorizo picado y queso; arroz de coliflor con langostinos; ensalada de burrata y jamón; hamburguesa completa sin pan.</div>
-        </div></article>
-      </div>
-    </section>
-
-    <section id="recetas">
-      <div class="section-title"><h3>Recetas clave</h3><div class="small">Incluye el arroz de coliflor y platos fáciles de rotar</div></div>
-      <div class="recipe-grid">
-        <article class="card recipe"><h4>Arroz de coliflor estilo Mercadona</h4><div class="small">Base keto para sustituir arroz</div><ul><li>300 g de coliflor picada o arroz de coliflor refrigerado.</li><li>1 diente de ajo o ajo en polvo.</li><li>10 g de aceite de oliva.</li><li>Sal.</li></ul><ol><li>Si compras coliflor normal, rállala o píquela en procesador hasta textura de arroz.</li><li>Calienta aceite y añade ajo 30 segundos.</li><li>Saltea la coliflor 4 a 6 minutos, sin tapar, para que no suelte demasiada agua.</li><li>Sala al final. Puedes usarla de base para pollo, atún o langostinos.</li></ol></article>
-        <article class="card recipe"><h4>Poke bowl keto de atún</h4><ul><li>120 g atún en lata al natural o aceite escurrido.</li><li>150 g calabacín fino o lechuga.</li><li>80 g aguacate.</li><li>10 g aceite de oliva.</li><li>5 g salsa soja o tamari.</li></ul><ol><li>Haz base con lechuga y calabacín salteado 2 minutos.</li><li>Mezcla atún con aceite y soja.</li><li>Añade aguacate y sésamo si tienes.</li></ol></article>
-        <article class="card recipe"><h4>Arroz de coliflor con pollo al curry</h4><ul><li>300 g arroz de coliflor.</li><li>180 g pechuga de pollo.</li><li>40 ml nata para cocinar o queso crema.</li><li>Curry, sal, aceite.</li></ul><ol><li>Dora el pollo en dados.</li><li>Añade curry y nata o queso crema.</li><li>Sirve sobre arroz de coliflor recién salteado.</li></ol></article>
-        <article class="card recipe"><h4>Langostinos con calabacín y aguacate</h4><ul><li>120 g langostinos cocidos.</li><li>150 g calabacín.</li><li>80 g aguacate.</li><li>60 g lechuga.</li></ul><ol><li>Saltea el calabacín 2 o 3 minutos.</li><li>Coloca lechuga de base.</li><li>Añade langostinos y aguacate.</li><li>Aliña con limón, aceite y sal.</li></ol></article>
-        <article class="card recipe"><h4>Fajitas keto en lechuga</h4><ul><li>200 g carne picada.</li><li>Hojas grandes de lechuga.</li><li>Queso rallado.</li><li>Pimiento y especias.</li></ul><ol><li>Saltea carne con pimiento.</li><li>Rellena hojas de lechuga.</li><li>Termina con queso y salsa casera.</li></ol></article>
-        <article class="card recipe"><h4>Tortilla potente de oficina/cena</h4><ul><li>3 huevos.</li><li>40 g queso rallado.</li><li>60 g espinacas o calabacín.</li><li>Jamón o pavo opcional.</li></ul><ol><li>Bate huevos.</li><li>Saltea la verdura.</li><li>Cuaja la tortilla con queso dentro.</li></ol></article>
-        <article class="card recipe"><h4>Ensalada César keto rápida</h4><ul><li>Lechuga romana.</li><li>Pollo cocinado.</li><li>Queso parmesano.</li><li>Mayonesa, limón, ajo y anchoa opcional.</li></ul><ol><li>Corta lechuga y pollo.</li><li>Haz salsa con mayonesa, limón y ajo.</li><li>Mezcla y añade queso.</li></ol></article>
-        <article class="card recipe"><h4>Calabacines rellenos de carne</h4><ul><li>2 calabacines.</li><li>200 g carne picada.</li><li>Tomate triturado natural en poca cantidad.</li><li>Queso para gratinar.</li></ul><ol><li>Vacía los calabacines.</li><li>Saltea carne y pulpa del calabacín.</li><li>Rellena y gratina.</li></ol></article>
-      </div>
-    </section>
-
-    <section id="calendario" class="card" style="padding:var(--space-6)">
-      <div class="section-title"><h3>Calendario de abril</h3><div class="small">30 días con 2 comidas</div></div>
-      <div class="calendar">
+    <section id="calendario" class="card box">
+      <div class="section-title"><h3>Calendario abril · 30 días</h3><div class="small">Sin repetir exactamente la misma secuencia semanal</div></div>
+      <div style="overflow:auto;margin-top:12px">
         <table>
-          <thead><tr><th>Día</th><th>10:00</th><th>18:00</th></tr></thead>
+          <thead><tr><th>Día</th><th>10:00</th><th>13:00</th><th>18:00</th></tr></thead>
           <tbody>
-            <tr><td>1</td><td>Yogur griego natural + arándanos + nueces</td><td>Poke bowl keto de salmón ahumado</td></tr>
-            <tr><td>2</td><td>Queso fresco batido natural + semillas</td><td>Hamburguesa al plato con queso y ensalada</td></tr>
-            <tr><td>3</td><td>Yogur griego + chía</td><td>Pollo al ajillo con calabacín</td></tr>
-            <tr><td>4</td><td>Huevos cocidos + pavo</td><td>Tortilla de espinacas y queso</td></tr>
-            <tr><td>5</td><td>Yogur griego + arándanos</td><td>Ternera con champiñones</td></tr>
-            <tr><td>6</td><td>Tortilla francesa en táper</td><td>Ensalada César keto</td></tr>
-            <tr><td>7</td><td>Yogur griego + almendras</td><td>Pizza base de calabacín</td></tr>
-            <tr><td>8</td><td>Yogur griego + coco rallado</td><td>Arroz de coliflor con pollo al curry</td></tr>
-            <tr><td>9</td><td>Queso curado + pepino + pavo</td><td>Langostinos con calabacín y aguacate</td></tr>
-            <tr><td>10</td><td>Yogur griego + moras</td><td>Lomo de cerdo con ensalada</td></tr>
-            <tr><td>11</td><td>Huevos cocidos + aceitunas</td><td>Huevos revueltos con gulas</td></tr>
-            <tr><td>12</td><td>Yogur griego + arándanos</td><td>Atún gratinado con mayonesa y queso</td></tr>
-            <tr><td>13</td><td>Queso fresco + nueces</td><td>Pechuga rellena de queso y pimientos</td></tr>
-            <tr><td>14</td><td>Yogur griego + semillas</td><td>Taco bowl keto con carne picada</td></tr>
-            <tr><td>15</td><td>Yogur griego + arándanos</td><td>Salmón al horno con espárragos</td></tr>
-            <tr><td>16</td><td>Skyr natural</td><td>Wok de pollo y brócoli</td></tr>
-            <tr><td>17</td><td>Queso fresco + tomate</td><td>Hamburguesas de pavo con queso</td></tr>
-            <tr><td>18</td><td>Yogur griego + canela</td><td>Ensalada de atún y huevo</td></tr>
-            <tr><td>19</td><td>Huevos + pavo</td><td>Albóndigas keto con tomate natural</td></tr>
-            <tr><td>20</td><td>Yogur griego + nueces</td><td>Crema de calabacín con pollo</td></tr>
-            <tr><td>21</td><td>Kéfir natural sin azúcar</td><td>Revuelto de champiñones y gambas</td></tr>
-            <tr><td>22</td><td>Yogur griego + arándanos</td><td>Poke bowl keto de atún</td></tr>
-            <tr><td>23</td><td>Queso fresco + semillas</td><td>Fajitas keto en hojas de lechuga</td></tr>
-            <tr><td>24</td><td>Yogur griego + cacao puro</td><td>Merluza con mayonesa de ajo</td></tr>
-            <tr><td>25</td><td>Huevos cocidos + queso</td><td>Pollo asado con ensalada griega</td></tr>
-            <tr><td>26</td><td>Yogur griego + nueces</td><td>Calabacines rellenos de carne</td></tr>
-            <tr><td>27</td><td>Yogur griego + fresas</td><td>Tortilla de chorizo y queso</td></tr>
-            <tr><td>28</td><td>Tabla pequeña de pavo y queso</td><td>Arroz de coliflor con langostinos</td></tr>
-            <tr><td>29</td><td>Yogur griego + arándanos</td><td>Ensalada de burrata y jamón</td></tr>
-            <tr><td>30</td><td>Huevos + aguacate</td><td>Hamburguesa completa sin pan</td></tr>
+            <tr><td>1</td><td>Yogur griego + arándanos + nueces</td><td>Ensalada de atún, lechuga y aceitunas</td><td>Poke bowl keto de salmón ahumado</td></tr>
+            <tr><td>2</td><td>Queso fresco batido + semillas</td><td>Huevos cocidos + pavo</td><td>Hamburguesa al plato con queso</td></tr>
+            <tr><td>3</td><td>Yogur griego + chía</td><td>Rollitos de pavo y queso</td><td>Pollo al ajillo con calabacín</td></tr>
+            <tr><td>4</td><td>Huevos cocidos</td><td>Ensalada de queso fresco y pepino</td><td>Tortilla de espinacas y queso</td></tr>
+            <tr><td>5</td><td>Yogur griego + arándanos</td><td>Atún con mayonesa y pepinillo</td><td>Ternera con champiñones</td></tr>
+            <tr><td>6</td><td>Tortilla francesa</td><td>Salmón ahumado con aguacate</td><td>Ensalada César keto</td></tr>
+            <tr><td>7</td><td>Yogur griego + almendras</td><td>Queso curado + pepino</td><td>Pizza base de calabacín</td></tr>
+            <tr><td>8</td><td>Yogur griego + coco rallado</td><td>Ensalada de huevo</td><td>Arroz de coliflor con pollo al curry</td></tr>
+            <tr><td>9</td><td>Queso curado + pavo</td><td>Atún con aceitunas</td><td>Langostinos con calabacín y aguacate</td></tr>
+            <tr><td>10</td><td>Yogur griego + moras</td><td>Huevos rellenos rápidos</td><td>Lomo de cerdo con ensalada</td></tr>
+            <tr><td>11</td><td>Huevos cocidos + aceitunas</td><td>Queso fresco batido salado con pepino</td><td>Huevos revueltos con gulas</td></tr>
+            <tr><td>12</td><td>Yogur griego + arándanos</td><td>Rollitos de jamón cocido y queso</td><td>Atún gratinado con mayonesa y queso</td></tr>
+            <tr><td>13</td><td>Queso fresco + nueces</td><td>Ensalada verde con pollo frío</td><td>Pechuga rellena de queso y pimientos</td></tr>
+            <tr><td>14</td><td>Yogur griego + semillas</td><td>Atún con aguacate</td><td>Taco bowl keto con carne picada</td></tr>
+            <tr><td>15</td><td>Yogur griego + arándanos</td><td>Queso curado + tomate</td><td>Salmón al horno con espárragos</td></tr>
+            <tr><td>16</td><td>Skyr natural</td><td>Ensalada de huevo y mayonesa</td><td>Wok de pollo y brócoli</td></tr>
+            <tr><td>17</td><td>Queso fresco + tomate</td><td>Pavo con aceitunas</td><td>Hamburguesas de pavo con queso</td></tr>
+            <tr><td>18</td><td>Yogur griego + canela</td><td>Atún con pepino</td><td>Ensalada de atún y huevo</td></tr>
+            <tr><td>19</td><td>Huevos + pavo</td><td>Queso y nueces</td><td>Albóndigas keto con tomate natural</td></tr>
+            <tr><td>20</td><td>Yogur griego + nueces</td><td>Crema fría de queso fresco y pepino</td><td>Crema de calabacín con pollo</td></tr>
+            <tr><td>21</td><td>Kéfir natural sin azúcar</td><td>Langostinos cocidos con lechuga</td><td>Revuelto de champiñones y gambas</td></tr>
+            <tr><td>22</td><td>Yogur griego + arándanos</td><td>Ensalada caprese keto</td><td>Poke bowl keto de atún</td></tr>
+            <tr><td>23</td><td>Queso fresco + semillas</td><td>Huevos cocidos + pepino</td><td>Fajitas keto en hojas de lechuga</td></tr>
+            <tr><td>24</td><td>Yogur griego + cacao puro</td><td>Atún con mayonesa</td><td>Merluza con mayonesa de ajo</td></tr>
+            <tr><td>25</td><td>Huevos cocidos + queso</td><td>Salmón ahumado con queso crema</td><td>Pollo asado con ensalada griega</td></tr>
+            <tr><td>26</td><td>Yogur griego + nueces</td><td>Queso curado + aceitunas</td><td>Calabacines rellenos de carne</td></tr>
+            <tr><td>27</td><td>Yogur griego + fresas</td><td>Tortilla fría en táper</td><td>Tortilla de chorizo y queso</td></tr>
+            <tr><td>28</td><td>Tabla pequeña de pavo y queso</td><td>Ensalada de aguacate y atún</td><td>Arroz de coliflor con langostinos</td></tr>
+            <tr><td>29</td><td>Yogur griego + arándanos</td><td>Huevos cocidos + queso fresco</td><td>Ensalada de burrata y jamón</td></tr>
+            <tr><td>30</td><td>Huevos + aguacate</td><td>Rollitos de pavo</td><td>Hamburguesa completa sin pan</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section id="compra">
-      <div class="section-title"><h3>Compra base Mercadona</h3><div class="small">Agrupada para repetir ingredientes sin aburrirte</div></div>
-      <div class="shopping">
-        <div class="card"><h4>Proteínas</h4><ul><li>Huevos</li><li>Pechuga de pollo</li><li>Carne picada vacuno/mixta</li><li>Hamburguesas 100%</li><li>Salmón ahumado o fresco</li><li>Atún en lata</li><li>Langostinos cocidos</li><li>Merluza</li><li>Lomo de cerdo</li><li>Pavo/jamón cocido alto en porcentaje de carne</li></ul></div>
-        <div class="card"><h4>Verduras y grasas</h4><ul><li>Coliflor o arroz de coliflor si lo ves disponible</li><li>Calabacín</li><li>Lechuga romana y brotes</li><li>Pepino</li><li>Espinacas</li><li>Brócoli</li><li>Champiñones</li><li>Pimientos</li><li>Aguacate</li><li>Aceitunas</li><li>AOVE</li></ul></div>
-        <div class="card"><h4>Lácteos y extras</h4><ul><li>Yogur griego natural</li><li>Queso fresco batido natural</li><li>Queso rallado</li><li>Parmesano</li><li>Burrata opcional</li><li>Nata o queso crema</li><li>Nueces/almendras</li><li>Semillas de chía o mezcla</li><li>Arándanos en ración pequeña</li><li>Salsa de soja o tamari</li><li>Especias</li></ul></div>
+    <section id="recetas" class="grid2">
+      <article class="card box"><div class="section-title"><h3>Arroz de coliflor</h3></div><ul><li>300 g migas de coliflor</li><li>10 g aceite de oliva</li><li>Ajo en polvo o fresco</li><li>Sal</li></ul><ol><li>Calienta aceite en sartén.</li><li>Añade las migas de coliflor.</li><li>Saltea 4-6 minutos hasta que quede suelta.</li><li>Úsala como base de pollo, atún o langostinos.</li></ol></article>
+      <article class="card box"><div class="section-title"><h3>Poke bowl keto de atún</h3></div><ul><li>120 g atún</li><li>150 g calabacín o lechuga</li><li>80 g aguacate</li><li>Soja/tamari y aceite</li></ul><ol><li>Haz base de lechuga y calabacín.</li><li>Mezcla atún con aceite y soja.</li><li>Añade aguacate y semillas.</li></ol></article>
+      <article class="card box"><div class="section-title"><h3>Langostinos con calabacín</h3></div><ul><li>120 g langostinos cocidos</li><li>150 g calabacín</li><li>80 g aguacate</li><li>60 g lechuga</li></ul><ol><li>Saltea el calabacín.</li><li>Añade lechuga, langostinos y aguacate.</li><li>Aliña con limón y aceite.</li></ol></article>
+      <article class="card box"><div class="section-title"><h3>Taco bowl keto</h3></div><ul><li>200 g carne picada</li><li>Lechuga</li><li>Queso rallado</li><li>Aguacate</li></ul><ol><li>Cocina la carne con especias.</li><li>Sirve sobre lechuga.</li><li>Añade queso y aguacate.</li></ol></article>
+    </section>
+
+    <section id="mercadona" class="card box">
+      <div class="section-title"><h3>Lista real de productos Mercadona</h3><div class="small">Nombres contrastados con resultados públicos de tienda online</div></div>
+      <div class="grid2" style="margin-top:12px">
+        <div>
+          <h4>Productos verificados públicamente</h4>
+          <ul>
+            <li><b>Migas de coliflor Hacendado ultracongeladas</b> [web:114]</li>
+            <li><b>Lomo de pavo Hacendado lonchas</b> [web:113]</li>
+            <li><b>Queso curado mezcla afrutado Hacendado cortado en cuñitas pieza</b> [web:113]</li>
+            <li><b>Aceitunas verdes rellenas de pepinillo Hacendado tarro</b> [web:113]</li>
+            <li><b>Corazones de alcachofa Hacendado 8-10 unidades tarro</b> [web:113]</li>
+            <li><b>Mojama de atún extra Hacendado lonchas paquete</b> [web:113]</li>
+            <li><b>Mortadela de pavo Hacendado finas lonchas paquete</b> [web:113]</li>
+            <li><b>Sazonador ajo y limón Hacendado carne y pescado horno/microondas con bolsa</b> [web:113]</li>
+            <li><b>Sazonador hierbas provenzales Hacendado pollo y costillas horno/microondas con bolsa</b> [web:113]</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Productos a revisar en tu tienda/app</h4>
+          <ul>
+            <li>Yogur griego natural Hacendado, preferiblemente sin azúcares añadidos.</li>
+            <li>Arándanos frescos en bandeja.</li>
+            <li>Huevos tamaño M o L.</li>
+            <li>Pechuga de pollo fileteada o entera.</li>
+            <li>Carne picada vacuno/mixta.</li>
+            <li>Atún al natural en lata.</li>
+            <li>Langostinos cocidos refrigerados o congelados.</li>
+            <li>Salmón ahumado.</li>
+            <li>Queso fresco batido natural.</li>
+            <li>Queso rallado mozzarella/emmental.</li>
+            <li>Aguacates.</li>
+            <li>Lechuga romana o mezcla gourmet.</li>
+            <li>Calabacín, pepino, espinacas, brócoli, champiñón.</li>
+            <li>Aceite de oliva virgen extra.</li>
+          </ul>
+        </div>
       </div>
-      <div class="note" style="margin-top:var(--space-4)">Para romper el ayuno, el yogur griego natural encaja mejor que opciones de arándanos saborizados o “+proteínas” con edulcorantes y almidones. Los arándanos pueden mantenerse en porciones moderadas, y aguacate, tomates, espárragos y yogur griego aparecen como opciones compatibles en listados keto de productos de Mercadona [web:102][web:100][web:99].</div>
-      <div class="note" style="margin-top:var(--space-4)">La idea del arroz de coliflor como sustituto bajo en carbohidratos aparece de forma recurrente en contenidos sobre Mercadona y recetas keto, y es una base útil para variar cenas sin usar arroz convencional [web:99][web:101][web:97].</div>
+      <div class="note" style="margin-top:16px">He podido verificar de forma directa un producto clave para tu dieta: <b>Migas de coliflor Hacendado ultracongeladas</b>, que encaja perfecto como sustituto del arroz [web:114]. Además, el sitemap público de Mercadona confirma varios nombres exactos de productos útiles para una compra keto práctica, como lomo de pavo, queso curado en cuñitas, aceitunas rellenas de pepinillo y mojama de atún [web:113].</div>
+      <div class="note" style="margin-top:16px">Como la tienda online de Mercadona limita bastante la exploración pública y muchos productos no aparecen completos sin navegación interna, la segunda columna la dejo como lista de compra operativa para que la copies y la contrastes rápido en tu app local. La parte más importante del plan, el sustituto tipo arroz de coliflor, sí queda apoyada por un nombre real de catálogo [web:114][web:116].</div>
     </section>
   </main>
 </div>
 <script>
-  const toggle=document.querySelector('[data-theme-toggle]');
-  let dark=window.matchMedia('(prefers-color-scheme: dark)').matches;
-  document.documentElement.setAttribute('data-theme', dark?'dark':'light');
-  toggle.addEventListener('click',()=>{dark=!dark;document.documentElement.setAttribute('data-theme', dark?'dark':'light');});
-  const links=[...document.querySelectorAll('nav a')];
-  const sections=links.map(a=>document.querySelector(a.getAttribute('href')));
-  const obs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}})},{rootMargin:'-30% 0px -55% 0px'});
-  sections.forEach(s=>s&&obs.observe(s));
+const toggle=document.querySelector('[data-theme-toggle]');let dark=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',dark?'dark':'light');toggle.addEventListener('click',()=>{dark=!dark;document.documentElement.setAttribute('data-theme',dark?'dark':'light')});const links=[...document.querySelectorAll('nav a')];const sections=links.map(a=>document.querySelector(a.getAttribute('href')));const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));}})},{rootMargin:'-35% 0px -55% 0px'});sections.forEach(s=>s&&obs.observe(s));
 </script>
 </body>
 </html>
